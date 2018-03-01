@@ -25,10 +25,7 @@
 	
 	<dubbo:registry address="zookeeper://127.0.0.1:2181?proxy=dubbo" id="PS" />
 
-	<dubbo:reference id="testInterface" interface="com.didispace.inter.TestInterface" retries="0" loadbalance="roundrobin" registry="PS" check="false"/>
-
-<!--  	<dubbo:reference id="userCenter" interface="com.inveno.hotoday.dubbo.interf.UserCenter" retries="2" loadbalance="roundrobin" registry="PS" /> -->
-
+	<dubbo:reference id="testInterface" interface="com.lyy.dubbo.TestInterface" retries="0" loadbalance="roundrobin" registry="PS" check="false" version="1.0.0"/>
 
 
 </beans>

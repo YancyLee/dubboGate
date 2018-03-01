@@ -1,4 +1,4 @@
-package com.didispace.util;
+package com.lyy.util;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;

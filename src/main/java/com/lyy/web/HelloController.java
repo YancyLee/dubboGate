@@ -1,7 +1,6 @@
-package com.didispace.web;
+package com.lyy.web;
 
-import com.didispace.inter.TestInterface;
-import com.didispace.util.Test;
+import com.lyy.dubbo.TestInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,10 +14,10 @@ public class HelloController {
 
 
     @RequestMapping("/hello")
-    public String index(String bigObject,String bigObject1) {
-        String result = testInterface.sayHello(bigObject,bigObject1);
+    public String sayHello(String name) {
+        String result = testInterface.sayHello(name);
         System.out.println(result);
-        return "Hello World";
+        return result;
     }
 
 }
